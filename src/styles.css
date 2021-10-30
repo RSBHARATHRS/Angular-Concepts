@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+/****Common Navigation Bar Horizontal style****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cnt{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 6px 1px gray;
+    margin: 20px;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+
+.cnt:hover{
+    transform: scale(1.08);
+}   

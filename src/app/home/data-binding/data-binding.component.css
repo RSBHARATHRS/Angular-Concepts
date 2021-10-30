@@ -1,0 +1,33 @@
+.Container{
+    display: flex;
+}
+
+.navCnt{
+    background-color: darkgreen;
+    opacity: 0.8;
+    flex-grow: 1;
+}
+
+nav ul li{
+   
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a{
+   text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 28px;
+} 
+
+.outletCnt{
+    flex-grow: 20;
+    border: 1px solid gray;
+}
+
+.active{
+    color: grey;
+    border: 2px solid orange;
+    background-color: orange;
+}

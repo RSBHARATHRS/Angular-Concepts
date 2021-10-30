@@ -1,0 +1,24 @@
+<h3>Two Way Data Binding</h3>
+
+<div class="inputCnt cnt">
+    <label>Enter Something</label><input type="text" [(ngModel)]="towWayVariable"><br>
+    <label>Enterd value is:</label><h4>{{towWayVariable}}</h4>
+</div>
+
+
+<div class="selectCnt cnt">
+    <label>Select One value:</label>
+    <select [(ngModel)]="selectedValue">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+    </select>
+    <p><strong>Selected Value:</strong>{{selectedValue}}</p>
+</div>
+<div class="radioCnt cnt">
+    <input type="radio" [(ngModel)]="radioValue" value="Bharath" name="radioGrp"><label>Bharath</label><br>
+    <input type="radio" [(ngModel)]="radioValue" value="Nijantha" name="radioGrp"><label>Nijantha</label><br>
+    <input type="radio" [(ngModel)]="radioValue" value="Lokesh" name="radioGrp"><label>Lokesh</label><br>
+</div>
+<p>{{radioValue}}</p>
