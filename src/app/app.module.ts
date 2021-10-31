@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { NavComponent } from './home/animation/nav/nav.component';
 import { Horizontal1Component } from './home/animation/nav/horizontal1/horizontal1.component';
 import { RegisterComponent } from './register/register.component';
+import { HorizontalNavDropdownComponent } from './home/animation/nav/horizontal-nav-dropdown/horizontal-nav-dropdown.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { RegisterComponent } from './register/register.component';
     NavComponent,
     Horizontal1Component,
     RegisterComponent,
+    HorizontalNavDropdownComponent,
   ],
   imports: [
     BrowserModule,
