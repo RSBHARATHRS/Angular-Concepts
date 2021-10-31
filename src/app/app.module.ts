@@ -18,6 +18,10 @@ import { InterpolationComponent } from './home/data-binding/interpolation/interp
 import { EventBindingComponent } from './home/data-binding/event-binding/event-binding.component';
 import { TwoWayComponent } from './home/data-binding/two-way/two-way.component';
 import { FormsModule } from '@angular/forms';
+import { NavComponent } from './home/animation/nav/nav.component';
+import { Horizontal1Component } from './home/animation/nav/horizontal1/horizontal1.component';
+import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +40,9 @@ import { FormsModule } from '@angular/forms';
     InterpolationComponent,
     EventBindingComponent,
     TwoWayComponent,
+    NavComponent,
+    Horizontal1Component,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

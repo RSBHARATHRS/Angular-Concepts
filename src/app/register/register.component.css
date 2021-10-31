@@ -1,0 +1,13 @@
+.regCnt{
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 20px   ;
+}
+
+.err{
+    color: red;
+}
+
+input{
+    margin: 10px 2px;
+}

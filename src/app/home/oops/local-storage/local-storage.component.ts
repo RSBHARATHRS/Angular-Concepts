@@ -8,12 +8,12 @@ import { DataServiceService } from 'src/app/data-service.service';
 })
 export class LocalStorageComponent implements OnInit {
 
-  constructor(private dataService:DataServiceService) { }
+  constructor(private dataService: DataServiceService) { }
 
   ngOnInit(): void {
   }
 
-  getValueFromService(){
-    console.log(this.dataService.getDetails());
+  getValueFromService() {
+    console.log();
   }
 }

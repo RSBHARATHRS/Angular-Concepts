@@ -2,15 +2,17 @@
 <div class="navCnt">
     <nav>
         <ul>
-            <li routerLinkActive="active"><a routerLink="oops" >OOP's</a></li>
-            <li routerLinkActive="active"><a routerLink="animation" >Animations</a></li>
+            <li routerLinkActive="active"><a routerLink="oops">OOP's</a></li>
+            <li routerLinkActive="active"><a routerLink="animation">Animations</a></li>
             <li routerLinkActive="active"><a routerLink="databinding">DataBinding</a></li>
             <li routerLinkActive="active"><a routerLink="service">Services</a></li>
         </ul>
     </nav>
+    <div class="profileCnt">
+        <p><strong>Name :</strong>{{userName}}</p>
+        <p><strong>EmailId :</strong>{{userEmail}}</p>
+    </div>
 </div>
 <div class="outletCnt">
     <router-outlet></router-outlet>
 </div>
-
-

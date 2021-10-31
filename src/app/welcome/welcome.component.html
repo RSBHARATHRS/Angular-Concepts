@@ -1,2 +1,8 @@
 <h1>Welcome to Angular</h1>
-<button (click)="goHome()">Home</button>
+<div class="loginCnt">
+    <input type="text" placeholder="Email" #email><br>
+    <span class="err" [style.display]="errDisplay">Enter a valid name</span>
+    <input type="text" placeholder="Password" #pass><br>
+    <button (click)="login(email.value, pass.value)">Login</button><br>
+    <a routerLink="register" (click)="goToRegister()">Don't have Account</a>
+</div>

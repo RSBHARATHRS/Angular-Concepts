@@ -12,4 +12,5 @@ export class EventBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

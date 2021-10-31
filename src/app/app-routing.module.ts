@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
 import { HeaderComponent } from './header/header.component';
 import { AnimationComponent } from './home/animation/animation.component';
+import { NavComponent } from './home/animation/nav/nav.component';
 import { DataBindingComponent } from './home/data-binding/data-binding.component';
 import { EventBindingComponent } from './home/data-binding/event-binding/event-binding.component';
 import { InterpolationComponent } from './home/data-binding/interpolation/interpolation.component';
@@ -12,72 +13,83 @@ import { ArrayComponent } from './home/oops/array/array.component';
 import { LocalStorageComponent } from './home/oops/local-storage/local-storage.component';
 import { ObjectsComponent } from './home/oops/objects/objects.component';
 import { OOPsComponent } from './home/oops/oops.component';
+import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   {
-    path:"",
-    redirectTo:"welcome",
-    pathMatch:"full",
+    path: "",
+    redirectTo: "welcome",
+    pathMatch: "full",
   },
   {
-    path:"welcome",
-    component:WelcomeComponent
+    path: "welcome",
+    component: WelcomeComponent
   },
   {
-    path:"home",
-    component:HomeComponent,
-    children:[
+    path: "register",
+    component: RegisterComponent
+  },  
+  {
+    path: "home",
+    component: HomeComponent,
+    children: [
       {
-        path:"oops",
-        component:OOPsComponent,
-        children:[
+        path: "oops",
+        component: OOPsComponent,
+        children: [
           {
-            path:"object",
-            component:ObjectsComponent
+            path: "object",
+            component: ObjectsComponent
           },
           {
-            path:"array",
-            component:ArrayComponent
+            path: "array",
+            component: ArrayComponent
           },
           {
-            path:"local-storage",
-            component:LocalStorageComponent
+            path: "local-storage",
+            component: LocalStorageComponent
           },
         ]
       },
       {
-        path:"animation",
-        component:AnimationComponent
+        path: "animation",
+        component: AnimationComponent,
+        children: [
+          {
+            path: "nav",
+            component: NavComponent
+          }
+        ]
       },
       {
-        path:"databinding",
-        component:DataBindingComponent,
-        children:[
+        path: "databinding",
+        component: DataBindingComponent,
+        children: [
           {
-            path:"interpolation",
-            component:InterpolationComponent
+            path: "interpolation",
+            component: InterpolationComponent
           },
           {
-            path:"event-binding",
-            component:EventBindingComponent
+            path: "event-binding",
+            component: EventBindingComponent
           },
           {
-            path:"two-way",
-            component:TwoWayComponent
+            path: "two-way",
+            component: TwoWayComponent
           }
         ]
       }
-       
+
     ]
   },
   {
-    path:"**",
-    redirectTo:"error"
+    path: "**",
+    redirectTo: "error"
   },
   {
-    path:"error",
-    component:ErrorComponent
+    path: "error",
+    component: ErrorComponent
   }
 ];
 

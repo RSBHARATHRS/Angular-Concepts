@@ -19,3 +19,7 @@
 .cnt:hover{
     transform: scale(1.08);
 }   
+
+li:hover:not(.active) {
+    background-color: #111;
+}
